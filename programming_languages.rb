@@ -8,7 +8,7 @@ new = {}
   end
   new.keys.each do |key|
     if languages[languages.keys.first].include?(key) && languages[languages.keys.last].include?(key)
-      new[key][:style] = [languages.keys]
+      new[key][:style] = languages.keys
       elsif languages[languages.keys.first].include?(key)
         new[key][:style] = [languages.keys.first]
       else
